@@ -1,0 +1,11 @@
+tasks:
+  - name: nodered
+    init: |
+      npm install
+    command: |
+      npm start
+
+ports:
+  - name: nodered
+    port: 1880
+    onOpen: open-preview
